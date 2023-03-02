@@ -1,1 +1,1 @@
-A browser extension to copy current url as markdown link etc.
+一款浏览器插件（Chrome 系），转换当前页面 Url 为 Markdown 格式的链接，并复制到剪切板。[了解更多](https://ovirgo.com/posts/a-simple-bookmark-copying/)

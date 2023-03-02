@@ -1,7 +1,4 @@
-console.log('script executing...');
-
 (function () {
-	// let val = "[" + document.title + " - " + document.location.hostname + "](" + document.location.href + ")"
 	let val = "[" + (document.title || document.location.hostname) + "](" + document.location.href + ")"
 
 	let btn = document.createElement("div")
