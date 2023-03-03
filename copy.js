@@ -4,7 +4,7 @@
 	let btn = document.createElement("div")
 	btn.id = 'btn'
 	btn.innerText = "🥳 copy"
-	btn.style = "background: #e6a23c; box-shadow: 1px 1px 3px #333; width: 120px; height: 40px; text-align: center; line-height: 40px; border-radius: 4px; color: #333; cursor: pointer; font-weight: 700; font-family: segoe script, courier new;"
+	btn.style = "background: #e6a23c; box-shadow: 1px 1px 3px #333; width: 120px; height: 40px; text-align: center; line-height: 40px; border-radius: 4px; color: #333; cursor: pointer; font-weight: 700; font-family: segoe script, courier new;font-size: 16px;"
 	btn.addEventListener("click", copy)
 
 	let ipt = document.createElement("input")
