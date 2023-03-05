@@ -1,5 +1,13 @@
 (function () {
-	let val = "[" + (document.title || document.location.hostname) + "](" + document.location.href + ")"
+	let md = `[${(document.title || document.location.hostname)}](${document.location.href})`
+	let org = `[[${document.location.href}][${(document.title || document.location.hostname)}]]`
+
+	// -----------------------------------------------------------
+	// 🛠️ 链接类型设置
+	// org - org mode link, eg. [[https://ovirgo.com/ship/][Ship]]
+	// md  - markdown link, eg. [Ship](https://ovirgo.com/ship/)
+	let type = md
+	// -----------------------------------------------------------
 
 	let btn = document.createElement("div")
 	btn.id = 'btn'
@@ -8,7 +16,7 @@
 	btn.addEventListener("click", copy)
 
 	let ipt = document.createElement("input")
-	ipt.value = val
+	ipt.value = type
 	ipt.id = "ipt"
 	ipt.style = "opacity: 0;"
 	ipt.select()
